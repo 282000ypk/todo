@@ -1,0 +1,240 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Arial';  
+}
+//////////////////////
+.taskhead
+{
+	width: 100%;
+}
+.taskheadingio
+{
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	border-bottom: solid black;
+	color: black;
+	font-size: 20px;
+}
+.btn
+{
+	height: 30px;
+	min-width: 100px;
+	border-radius: 8px;
+	background-color: rgba(0,200,250,0.8) 
+}
+.btnaction
+{
+	height: 30px;
+	min-width: 100px;
+	max-width: 100%;
+	border-radius: 8px;
+	background-color: rgba(0,200,250,0.8);
+	margin-left: 20px;
+}
+.logout
+{
+	position: absolute;
+	right: 40px;
+	top: 20px;
+	height: 30px;
+	width: 100px;
+	border-radius: 8px;
+	background-color: rgba(0,200,250,0.8) 
+}
+body
+{
+	background-color: #6abadeba;
+	background-size: cover;
+	background-position: center;
+}
+.mainbody
+{
+	height: 100vh;
+	width: 100vw;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.addtask
+{
+	width: 25%;
+	height: 75vh;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0px 0px 10px black;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	padding: 2vh;
+}
+////////////////////
+.addtasksub
+{
+	line-height: 50px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.addtasksub1
+{
+	flex-basis: 100%
+}
+.addtasksub2
+{
+	flex-basis: 100%
+}
+.addtasksub3
+{
+	flex-basis: 100%
+}
+
+.blank
+{
+	width: 5%;
+	height: 80vh;
+}
+.alltask
+{
+	width: 55%;
+	height: 75vh;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0px 0px 10px black;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2vh;
+}
+.action
+{
+	display: flex;
+	width: 100%;
+	height: 10%;
+	align-items: center;
+	border-bottom: solid black;
+}
+.retrived
+{
+	height: 80%;
+	overflow: auto;
+	display: flex;
+	flex-basis: 100%;
+	justify-content: center;
+}
+.tasktable
+{
+	min-height: 50px;
+	width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+}
+.tasktable tr
+{
+	height: 50px;
+}
+.tasktable td
+{
+	padding: 2px;
+}
+.edit
+{
+	position: absolute;
+	width: 50vw;
+	height: 200px;
+	padding: 20px;
+	top: 125vh;
+	left: 25vw;
+	background-color: white;
+	border: 2px solid black;
+	transition: 0.2s ease-in-out;
+}
+.editactive
+{
+	transform: translateY(-100vh);
+}
+.editinactive
+{
+	display: none;
+}
+@media(max-width: 1025px)
+{
+	.logout
+	{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		height: 30px;
+		width: 100px;
+		border-radius: 8px;
+		background-color: rgba(0,200,250,0.8) 
+	}
+	.mainbody
+	{
+		height: 90vh;
+		width: 100vw;
+		background-color: transparent;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding-top: 7vh;
+		padding-bottom: 3vh;
+	}
+	.addtask
+	{
+		display: flex;
+		flex-basis: 80%;
+		height: 25vh;
+		width: 80%;
+		background-color: rgba(255,255,255,0.8);
+		box-shadow: 0px 0px 10px black;
+	}
+	.blank
+	{
+		display: flex;
+		flex-basis: 80%;
+		height: 5vh;
+		width: 80%;
+	}
+	.alltask
+	{
+		display: flex;
+		flex-basis: 80%;
+		align-items: center;
+		height: 60vh;
+		width: 80%;
+		background-color: rgba(255,255,255,0.8);
+		box-shadow: 0px 0px 10px black;
+		overflow: auto;
+	}
+	.action
+	{
+		display: flex;
+		width: 100%;
+		min-height: 10%;
+		align-items: center;
+		border-bottom: solid black;
+	}
+	.retrived
+	{
+		display: block;
+		height: 80%;
+		overflow: auto;
+		display: flex;
+		flex-basis: 100%;
+	}
+	.tasktable
+	{
+		position: relative;
+		left: 40vw;
+		width: 150vw;
+		min-height: 50px;
+		background-color: transparent;
+		border-collapse: collapse;
+	}
+}
